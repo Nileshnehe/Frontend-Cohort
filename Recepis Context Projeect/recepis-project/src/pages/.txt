@@ -1,0 +1,32 @@
+
+import React, { useState } from 'react';
+import ResepisContext from './context/ResepisContext';
+import Recepis from './Recepis'; // Assuming Recepis is imported here
+
+function App() {
+  const [recepisData, setRecepisData] = useState([]); // Or fetch your data here
+
+  // In a real application, you'd likely fetch this data from an API
+  // For demonstration, let's use some dummy data
+  useState(() => {
+    setRecepisData([
+      { id: 1, title: 'Spaghetti Carbonara' },
+      { id: 2, title: 'Chicken Tikka Masala' },
+    ]);
+  }, []);
+
+  const contextValue = {
+    data: recepisData,
+    // You can add other state or functions here too
+  };
+
+  return (
+    <ResepisContext.Provider value={contextValue}>
+      {/* Any components that need access to ResepisContext, including Recepis,
+          should be rendered inside this Provider. */}
+      <Recepis />
+    </ResepisContext.Provider>
+  );
+}
+
+export default App;
