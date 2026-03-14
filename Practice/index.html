@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Modal background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+</style>
+</head>
+<body>
+
+<button id="openBtn">Window Open Karo</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Ye Window Interface Hai!</h2>
+    <p>Yahan aapka content dikhega. Jaise form ya message.</p>
+  </div>
+</div>
+
+<script>
+// Modal elements
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("openBtn");
+var span = document.getElementsByClassName("close")[0];
+
+// Button click par modal open
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Close button par modal band
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Overlay click par band
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
