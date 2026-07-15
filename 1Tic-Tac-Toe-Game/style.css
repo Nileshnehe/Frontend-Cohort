@@ -43,7 +43,7 @@ body {
 
 }
 
-#btn{
+#btn {
     padding: 1rem 2rem;
     border-radius: 0.7rem;
     font-size: 1.25rem;
@@ -54,7 +54,7 @@ body {
     color: #f6f4f1;
 }
 
-#new-btn{
+#new-btn {
     padding: 1rem 2rem;
     border-radius: 0.7rem;
     font-size: 1.25rem;
@@ -65,7 +65,7 @@ body {
     color: #f6f4f1;
 }
 
-#msg{
+#msg {
     margin-top: 1rem;
     margin-bottom: 1rem;
 
@@ -74,6 +74,14 @@ body {
     font-size: 2rem;
 }
 
-.hide{
+.hide {
     display: none;
+}
+
+.scoreboard {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
 }
