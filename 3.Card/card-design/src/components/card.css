@@ -1,0 +1,98 @@
+/* Card Core Container Styling */
+.card-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 1.8rem;
+    padding: 0.8rem;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Image Presentation Area */
+.image-wrapper {
+    width: 100%;
+    height: 300px; /* Reference screenshot ke logic standard layout scaling ke liye */
+    border-radius: 1.4rem;
+    overflow: hidden;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Text Block Containers */
+.info-wrapper {
+    padding: 1.2rem 0.6rem 0.8rem 0.6rem;
+}
+
+.name-badge-row {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.name-badge-row h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #111111;
+    margin: 0;
+}
+
+.bio-text {
+    font-size: 0.95rem;
+    color: #666666;
+    line-height: 1.4;
+    margin-top: 0.6rem;
+    margin-bottom: 0;
+}
+
+/* Bottom Actions/Stats Row Layout */
+.footer-stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 0.4rem 0.6rem 0.4rem;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #111111;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.footer-icon {
+    color: #999999;
+}
+
+/* Custom Interactive Follow Button Style */
+.follow-action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    background-color: #ededed;
+    color: #111111;
+    border: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.follow-action-btn:hover {
+    background-color: #e2e2e2;
+}
+
+.plus-icon {
+    margin-left: 0.1rem;
+}
