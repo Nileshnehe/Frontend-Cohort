@@ -2,21 +2,13 @@ import React from 'react';
 import "./Title.css";
 
 
-const Title = ({ title, desc, features }) => {
-  console.log(features);
+const Title = ({ title, price }) => {
+let styles = {backgroundColor : price > 30000 ? "yellow" : "blue"}
   return (
-    <div className='product'>
+    <div className='product' style={styles}>
       <h1> {title}</h1>
-      <h3>{desc}</h3>
-      {
-        <ul>
-          {
-            features?.map((feature) =>(
-              <li>{feature}</li>
-            ))
-          }
-        </ul>
-      }
+      <p>{price}</p>
+      {price > 30000 ? <p>"Discount of 5%"</p> : null}
     </div>
   )
 }

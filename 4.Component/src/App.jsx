@@ -6,9 +6,9 @@ const App = () => {
   return (
 
     <div>
-      <Title title="Laptop" desc="This Laptop is for Gamers" features={option} />
-      <Title title="Smart Watch" desc="This watch is Premium" />
-      <Title title="Mobile" desc="this mobile have 128gb storage" />
+      <Title title="Laptop" price ={40000} features={option} />
+      <Title title="Smart Watch" price ={50000} />
+      <Title title="Mobile" price = {4000} />
     </div>
   )
 }

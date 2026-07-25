@@ -10,3 +10,8 @@
 .product h1 {
     text-align: center;
 }
+
+.product h1,
+.product p {
+  background-color: transparent;
+}
